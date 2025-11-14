@@ -118,9 +118,14 @@ public class Algebra {
 	public static int sqrt(int x) {
 		// Replace the following statement with your code
 		int temp = 1;
-		while (pow(temp, 2) <= x) {
+		while (pow(temp, 2) < x) {
 			temp++;
 		}
-		return temp;
+		if (pow(temp, 2) > x) {
+            temp--;
+        }
+        
+        
+        return temp;
 	}	  	  
 }
