@@ -33,7 +33,7 @@ public class Algebra {
 		x1--;
 		temp++ ; 
 		}
-		while (x2 < 0) {
+		while (x1 < 0) {
 			x1++;
 			temp--; 
 		}
@@ -79,7 +79,7 @@ public class Algebra {
 	}
 
 	while (x2 < 0) {
-		temp = minus(0, x1);
+		temp = minus(temp, x1);
 		x2++;
 	}
 		return temp;
@@ -118,7 +118,7 @@ public class Algebra {
 	public static int sqrt(int x) {
 		// Replace the following statement with your code
 		int temp = 1;
-		while (pow(temp, 2) < x) {
+		while (pow(temp, 2) <= x) {
 			temp++;
 		}
 		return temp;
